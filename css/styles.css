@@ -1,0 +1,83 @@
+/* Estilos generales */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilos para el modo claro (por defecto) */
+[data-bs-theme="light"] {
+    --card-bg: #ffffff;
+    --text-color: #333333;
+    --border-color: #dee2e6;
+}
+
+/* Estilos para el modo oscuro */
+[data-bs-theme="dark"] {
+    --card-bg: #2b3035;
+    --text-color: #f8f9fa;
+    --border-color: #495057;
+}
+
+/* Estilos para las tarjetas */
+.card {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+/* Animaciones para los elementos */
+.card, .btn, .form-control {
+    transition: all 0.3s ease;
+}
+
+/* Estilos para los iconos */
+.fa-moon, .fa-sun {
+    margin-right: 5px;
+}
+
+/* Estilos para el switch de modo oscuro */
+.form-switch .form-check-input {
+    cursor: pointer;
+    width: 3em;
+}
+
+/* Estilos para las categorías */
+.categoria-iluminacion {
+    background-color: rgba(255, 193, 7, 0.2);
+}
+
+.categoria-cocina {
+    background-color: rgba(220, 53, 69, 0.2);
+}
+
+.categoria-entretenimiento {
+    background-color: rgba(13, 110, 253, 0.2);
+}
+
+.categoria-climatizacion {
+    background-color: rgba(25, 135, 84, 0.2);
+}
+
+.categoria-otros {
+    background-color: rgba(108, 117, 125, 0.2);
+}
+
+/* Estilos para los resúmenes de consumo */
+#consumoTotal, #costoTotal {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Estilos para los botones de acción */
+.btn-accion {
+    margin-right: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card-header h3 {
+        font-size: 1.2rem;
+    }
+    
+    #consumoTotal, #costoTotal {
+        font-size: 1.5rem;
+    }
+}
